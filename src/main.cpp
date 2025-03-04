@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   }
     std::cout<<argv[1]<<std::endl;
     std::cout<<"+---------------------------------+"<<std::endl;
-  std::optional<JSONValue>value = JSON::Parse(fullBuffer.c_str());
+  std::optional<JsonValue>value = JSON::Parse(fullBuffer.c_str());
   if(value.has_value())
   {
     std::cout << value.value() << std::endl;
